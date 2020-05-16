@@ -7,6 +7,8 @@ date_default_timezone_set('Etc/UTC');
 
 try {
     require './phpmailer/PHPMailerAutoload.php';
+    require './reCaptcha.php';
+    flush(); // clear buffer of reCaptcha if it passes.
 
     $recipients = $formConfig['recipientEmail'];
 
@@ -16,7 +18,8 @@ try {
         die('MF001');
     }
 
-    function getRemoteIPAddress() {
+    function getRemoteIPAddress()
+    {
         if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
             return $_SERVER['HTTP_CLIENT_IP'];
 
@@ -34,24 +37,24 @@ try {
 
     $subject = "Mensaje desde carniceriaporkys.com";
 /*
-    if (isset($_POST['form-type'])) {
-        switch ($_POST['form-type']){
-            case 'contact':
-                $subject = 'A message from your site visitor';
-                break;
-            case 'subscribe':
-                $subject = 'Subscribe request';
-                break;
-            case 'order':
-                $subject = 'Order request';
-                break;
-            default:
-                $subject = 'A message from your site visitor';
-                break;
-        }
-    }else{
-        die('MF004');
-    }*/
+if (isset($_POST['form-type'])) {
+switch ($_POST['form-type']){
+case 'contact':
+$subject = 'A message from your site visitor';
+break;
+case 'subscribe':
+$subject = 'Subscribe request';
+break;
+case 'order':
+$subject = 'Order request';
+break;
+default:
+$subject = 'A message from your site visitor';
+break;
+}
+}else{
+die('MF004');
+}*/
 
     if (isset($_POST['email'])) {
         $template = str_replace(
@@ -69,7 +72,7 @@ try {
 
     preg_match("/(<!-- #\{BeginInfo\} -->)(.|\s)*?(<!-- #\{EndInfo\} -->)/", $template, $tmp, PREG_OFFSET_CAPTURE);
     foreach ($_POST as $key => $value) {
-        if ($key != "counter" && $key != "email" && $key != "message" && $key != "form-type" && $key != "g-recaptcha-response" && !empty($value)){
+        if ($key != "counter" && $key != "email" && $key != "message" && $key != "form-type" && $key != "g-recaptcha-response" && !empty($value)) {
             $info = str_replace(
                 array("<!-- #{BeginInfo} -->", "<!-- #{InfoState} -->", "<!-- #{InfoDescription} -->"),
                 array("", ucfirst($key) . ':', $value),
@@ -85,7 +88,6 @@ try {
         $template);
 
     $mail = new PHPMailer();
-
 
     if ($formConfig['useSmtp']) {
         //Tell PHPMailer to use SMTP

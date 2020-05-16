@@ -2,18 +2,18 @@
 
 if ($_SERVER['SERVER_NAME'] == 'localhost') {
     // HTTP
-    define('HTTP_SERVER', 'http://localhost:81/porkys/carniceriaporkys.com/store/');
-    define('HTTP_SERVER_HOME', 'http://localhost:81/porkys/carniceriaporkys.com/');
+    define('HTTP_SERVER', 'http://localhost:8888/porkys/carniceriaporkys.com/store/');
+    define('HTTP_SERVER_HOME', 'http://localhost:8888/porkys/carniceriaporkys.com/');
 
     // HTTPS
-    define('HTTPS_SERVER', 'http://localhost:81/porkys/carniceriaporkys.com/store/');
-    define('HTTPS_SERVER_HOME', 'http://localhost:81/porkys/carniceriaporkys.com/');
+    define('HTTPS_SERVER', 'http://localhost:8888/porkys/carniceriaporkys.com/store/');
+    define('HTTPS_SERVER_HOME', 'http://localhost:8888/porkys/carniceriaporkys.com/');
 
     // DIR
-    define('DIR_APPLICATION', 'C:/xampp/htdocs/porkys/carniceriaporkys.com/store/catalog/');
-    define('DIR_SYSTEM', 'C:/xampp/htdocs/porkys/carniceriaporkys.com/store/system/');
-    define('DIR_IMAGE', 'C:/xampp/htdocs/porkys/carniceriaporkys.com/store/image/');
-    define('DIR_STORAGE', 'C:/xampp/htdocs/porkys/carniceriaporkys.com/store_storage/');
+    define('DIR_APPLICATION', '/Users/angel.carriola/Proyectos/porkys/carniceriaporkys.com/store/catalog/');
+    define('DIR_SYSTEM', '/Users/angel.carriola/Proyectos/porkys/carniceriaporkys.com/store/system/');
+    define('DIR_IMAGE', '/Users/angel.carriola/Proyectos/porkys/carniceriaporkys.com/store/image/');
+    define('DIR_STORAGE', '/Users/angel.carriola/Proyectos/porkys/carniceriaporkys.com/store_storage/');
     define('DIR_LANGUAGE', DIR_APPLICATION . 'language/');
     define('DIR_TEMPLATE', DIR_APPLICATION . 'view/theme/');
     define('DIR_CONFIG', DIR_SYSTEM . 'config/');
@@ -26,11 +26,11 @@ if ($_SERVER['SERVER_NAME'] == 'localhost') {
 
     // DB
     define('DB_DRIVER', 'mpdo');
-    define('DB_HOSTNAME', 'localhost');
+    define('DB_HOSTNAME', '127.0.0.1');
     define('DB_USERNAME', 'root');
-    define('DB_PASSWORD', '123123');
+    define('DB_PASSWORD', 'root');
     define('DB_DATABASE', 'porkystore');
-    define('DB_PORT', '3306');
+    define('DB_PORT', '8889');
     define('DB_PREFIX', 'oc_');
 } else {
     // HTTP

@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER['SERVER_NAME'] == 'localhost') {
-    define('STORE_URL', 'http://localhost:81/porkys/carniceriaporkys.com/store');
+    define('STORE_URL', 'http://localhost:8888/porkys/carniceriaporkys.com/store');
 } else {
     define('STORE_URL', 'http://tienda.carniceriaporkys.com');
 }
@@ -68,10 +68,10 @@ if ($_SERVER['SERVER_NAME'] == 'localhost') {
             <div class="rd-navbar-top-panel rd-navbar-top-panel-dark">
               <div class="rd-navbar-top-panel__main">
                 <div class="rd-navbar-top-panel__toggle rd-navbar-fixed__element-1 rd-navbar-static--hidden" data-rd-navbar-toggle=".rd-navbar-top-panel__main"><span></span></div>
-                <div class="rd-navbar-top-panel__content"> 
+                <div class="rd-navbar-top-panel__content">
                   <div class="rd-navbar-top-panel__left">
                     <ul class="rd-navbar-items-list">
-                      <li> 
+                      <li>
                         <div class="unit flex-row align-items-center unit-spacing-xs">
                           <div class="unit__left"><span class="icon icon-sm icon-primary linear-icon-map-marker"></span></div>
                           <div class="unit__body">
@@ -338,7 +338,7 @@ if ($_SERVER['SERVER_NAME'] == 'localhost') {
         </div>
       </section>
       <!-- About us-->
-      <section id="nosotros" class="bg-gray-lighter object-wrap decor-text" data-content="NOSOTROS" id="about"> 
+      <section id="nosotros" class="bg-gray-lighter object-wrap decor-text" data-content="NOSOTROS" id="about">
         <div class="bg-decor d-flex align-items-center justify-content-end" data-parallax-scroll="{&quot;y&quot;: 50,  &quot;smoothness&quot;: 30}"><img src="images/bg-decor-4.png?1" alt=""/>
         </div>
         <div class="section-lg">
@@ -349,7 +349,7 @@ if ($_SERVER['SERVER_NAME'] == 'localhost') {
                 <br />
                 <h5>Un poco de Historia</h5>
                 <p style="text-align: justify">
-                  La historia de nuestra empresa es familiar, inició en el año de 1985, cuando decidimos iniciar un pequeño negocio al ver una oportunidad de incursionar en el ramo de la carne adquiriendo nuestros primeros equipos de refrigeración y así abriendo por primera vez las puertas de <strong>Carnes Selectas Porky's</strong>. 
+                  La historia de nuestra empresa es familiar, inició en el año de 1985, cuando decidimos iniciar un pequeño negocio al ver una oportunidad de incursionar en el ramo de la carne adquiriendo nuestros primeros equipos de refrigeración y así abriendo por primera vez las puertas de <strong>Carnes Selectas Porky's</strong>.
                 </p>
                 <p style="text-align: justify">
                   Con el tiempo, Carnes Selectas Porky's adquirió la suficiente madurez y experiencia en el giro de la carne que nos permitió brindar calidad y atención personalizada a cada uno de nuestros clientes, quienes hasta hoy han reconocido nuestro servicio especializado depositándonos su confianza y promoviendo desde entonces la recomendación de boca en boca.
@@ -358,7 +358,7 @@ if ($_SERVER['SERVER_NAME'] == 'localhost') {
                   Rebasando con creces las expectativas, a más de 30 años de su fundación, actualmente distribuimos nuestros productos cárnicos verificando que cumplan siempre con los estándares más altos de calidad, conservando siempre la misma profesionalidad, dedicación e ilusión que nos distingue desde el primer día.
                 </p>
                 <p style="text-align: justify">
-                  <strong>Carnes Selectas Porky's</strong>, se ha convertido en uno de los puntos más importantes de referencia en el sector cárnico, empresa fortalecida por nuestra gran familia unida, trabajadora y con objetivos claros para enfrentar un mercado cada vez más competitivo. 
+                  <strong>Carnes Selectas Porky's</strong>, se ha convertido en uno de los puntos más importantes de referencia en el sector cárnico, empresa fortalecida por nuestra gran familia unida, trabajadora y con objetivos claros para enfrentar un mercado cada vez más competitivo.
                 </p>
                 <div class="row row-30">
                   <div class="col-xl-6">
@@ -885,7 +885,7 @@ if ($_SERVER['SERVER_NAME'] == 'localhost') {
           </div>
         </div>
       </section>
-   
+
       <!-- CONTACT -->
       <section class="bg-gray-lighter object-wrap decor-text text-center" data-content="Contact" id="contacto">
         <div class="section-lg">
@@ -895,7 +895,8 @@ if ($_SERVER['SERVER_NAME'] == 'localhost') {
               <div class="col-lg-6">
                 <h4 class="heading-decorated">DUDAS Y SUGERENCIAS</h4>
                 <!-- RD Mailform-->
-                <form class="rd-mailform rd-mailform_style-1" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php" novalidate="novalidate">
+                <form id="contactForm" class="rd-mailform rd-mailform_style-1" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php" novalidate="novalidate">
+                  <input type="hidden" name="g-recaptcha-response" />
                   <div class="form-wrap">
                     <input class="form-input form-control-has-validation" id="contact-name" type="text" name="name" data-constraints="@Required"><span class="form-validation"></span>
                     <label class="form-label rd-input-label" for="contact-name">Nombre</label>
@@ -914,8 +915,8 @@ if ($_SERVER['SERVER_NAME'] == 'localhost') {
                   </div>
                   <!--Google captcha-->
                   <div class="form-wrap">
-                      <div id="captcha1" data-sitekey="6Lc35Z8UAAAAAJsppsyMcLlfgCZTpiRJDutXLJUO" data-theme="dark" class="recaptcha"></div>
-                    </div>
+                      <div id="captcha1" data-sitekey="6Lc35Z8UAAAAAJsppsyMcLlfgCZTpiRJDutXLJUO" data-target-input="[name = 'g-recaptcha-response']" data-theme="dark" class="recaptcha"></div>
+                  </div>
                   <!-- End google captcha-->
                   <button class="button button-primary" type="submit">ENVÍAR</button>
                 </form>
@@ -933,9 +934,9 @@ if ($_SERVER['SERVER_NAME'] == 'localhost') {
         </div>
       </section>
 
-      
+
       <section class="section parallax-container context-dark decor-text" data-parallax-img="images/bg-collage.jpg" data-content="RECOMENDACIONES">
-        <div class="parallax-content"> 
+        <div class="parallax-content">
           <div class="container section-lg text-center">
             <h4 class="heading-decorated">LO QUE DICEN NUESTROS CLIENTES</h4>
             <!-- Owl Carousel-->
@@ -988,7 +989,7 @@ if ($_SERVER['SERVER_NAME'] == 'localhost') {
           </div>
         </div>
       </section>
-   
+
       <!-- Page Footer -->
       <section class="pre-footer-corporate bg-image-7 bg-overlay-darkest">
         <div class="container">
