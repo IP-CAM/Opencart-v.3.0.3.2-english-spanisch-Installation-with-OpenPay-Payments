@@ -45,11 +45,11 @@ if ($_SERVER['SERVER_NAME'] == 'localhost') {
     define('HTTPS_CATALOG', 'http://tienda.carniceriaporkys.com/');
 
     // DIR
-    define('DIR_APPLICATION', '/home/prbukzibs3ed/public_html/store/admin/');
-    define('DIR_SYSTEM', '/home/prbukzibs3ed/public_html/store/system/');
-    define('DIR_IMAGE', '/home/prbukzibs3ed/public_html/store/image/');
-    define('DIR_STORAGE', '/home/prbukzibs3ed/public_html/store_storage/');
-    define('DIR_CATALOG', '/home/prbukzibs3ed/public_html/store/catalog/');
+    define('DIR_APPLICATION', '/home/gjq077d8gk3r/public_html/store/admin/');
+    define('DIR_SYSTEM', '/home/gjq077d8gk3r/public_html/store/system/');
+    define('DIR_IMAGE', '/home/gjq077d8gk3r/public_html/store/image/');
+    define('DIR_STORAGE', '/home/gjq077d8gk3r/public_html/store_storage/');
+    define('DIR_CATALOG', '/home/gjq077d8gk3r/public_html/store/catalog/');
     define('DIR_LANGUAGE', DIR_APPLICATION . 'language/');
     define('DIR_TEMPLATE', DIR_APPLICATION . 'view/template/');
     define('DIR_CONFIG', DIR_SYSTEM . 'config/');
