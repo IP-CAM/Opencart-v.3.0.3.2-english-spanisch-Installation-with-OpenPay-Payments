@@ -1,1 +1,4 @@
+store_storage/cache/*
+store_storage/logs/*
+store_storage/session/*
 store/error_log
