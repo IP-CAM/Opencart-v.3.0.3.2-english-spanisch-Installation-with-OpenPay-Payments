@@ -1,0 +1,12 @@
+store_storage/cache
+store_storage/logs
+store_storage/session
+store_storage/upload
+store_storage/download
+store_storage/vendor
+store/system/storage/*
+!store/system/storage/vendor
+store/system/storage/vendor/*
+!store/system/storage/vendor/composer
+!store/system/storage/vendor/autoload.php
+
