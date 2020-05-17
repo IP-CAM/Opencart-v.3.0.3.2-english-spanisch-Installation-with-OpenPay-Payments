@@ -1006,6 +1006,7 @@ if ($_SERVER['SERVER_NAME'] == 'localhost') {
                 <li><a href="#section_sevices">SERVICIOS</a></li>
                 <li><a href="#galeria">GALERÍA</a></li>
                 <li><a href="#contacto">CONTACTO</a></li>
+                <li><a href="<?php echo STORE_URL; ?>">TIENDA EN LÍNEA</a></li>
               </ul>
             </div>
             <div class="col-sm-10 col-md-6 col-lg-5 col-xl-3">
