@@ -5,6 +5,8 @@
 
 .swiper-container {
     background-image: url(../images/slider-bg-lg.png);
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .swiper-digital .swiper-wrapper:before {
