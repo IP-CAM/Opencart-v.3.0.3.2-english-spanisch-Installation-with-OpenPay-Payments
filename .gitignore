@@ -1,4 +1,13 @@
 store_storage/cache/*
+!store_storage/cache/index.html
 store_storage/logs/*
+!store_storage/logs/index.html
 store_storage/session/*
+!store_storage/session/index.html
+store_storage/upload/*
+!store_storage/upload/index.html
 store/error_log
+store/admin/error_log
+store/catalog/error_log
+store/image/cache/*
+!store/image/cache/index.html

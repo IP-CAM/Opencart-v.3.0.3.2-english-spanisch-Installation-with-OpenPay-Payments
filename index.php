@@ -441,7 +441,7 @@ if ($_SERVER['SERVER_NAME'] == 'localhost') {
               </article>
             </div>
             <div class="col-md-7 col-lg-4">
-              <figure class="image-sizing-1" data-parallax-scroll="{&quot;y&quot;: -10,  &quot;smoothness&quot;: 30}"><img src="images/steak.png" alt="" class="image-steak" />
+              <figure class="image-sizing-1" data-parallax-scroll="{&quot;y&quot;: -10,  &quot;smoothness&quot;: 30}"><img src="images/steak-md.png" alt="" class="image-steak" />
               </figure>
             </div>
           </div>
@@ -837,7 +837,7 @@ if ($_SERVER['SERVER_NAME'] == 'localhost') {
       </section>
 
       <!-- counters-->
-      <section class="section parallax-container context-dark" data-parallax-img="images/slider-bg.png">
+      <section class="section parallax-container context-dark" data-parallax-img="images/slider-bg-lg.png">
         <div class="parallax-content">
           <div class="container section-md">
             <div class="row justify-content-md-center row-50">

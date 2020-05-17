@@ -1,13 +1,14 @@
 #services_section {
-    background: #F2F2F2 url("../images/food-icons-pattern.png") repeat center top
+    background: #f2f2f2 url("../images/food-icons-pattern.png") repeat center
+        top;
 }
 
 .swiper-container {
-    background-image: url(../images/slider-bg.png);
+    background-image: url(../images/slider-bg-lg.png);
 }
 
-.swiper-digital .swiper-wrapper:before  {
-    content: '';
+.swiper-digital .swiper-wrapper:before {
+    content: "";
     font-size: 280px;
     font-weight: 600;
     bottom: 100px;
@@ -36,11 +37,14 @@
     text-shadow: 0 0 10px #000;
 }
 
-.rd-navbar-static .rd-navbar-inner, .rd-navbar-static .rd-navbar-top-panel, .rd-navbar-static .rd-navbar-bottom-panel {
+.rd-navbar-static .rd-navbar-inner,
+.rd-navbar-static .rd-navbar-top-panel,
+.rd-navbar-static .rd-navbar-bottom-panel {
     max-width: auto;
 }
 
-.rd-navbar-static .rd-navbar-items-list > li + li::before, .rd-navbar-sidebar .rd-navbar-items-list > li + li::before {
+.rd-navbar-static .rd-navbar-items-list > li + li::before,
+.rd-navbar-sidebar .rd-navbar-items-list > li + li::before {
     top: 0;
     transform: none;
     left: 0;
@@ -48,7 +52,10 @@
     background: #ececee99;
 }
 
-.rd-navbar-fixed .rd-navbar-top-panel__content .rd-navbar-top-panel__left + .rd-navbar-top-panel__right {
+.rd-navbar-fixed
+    .rd-navbar-top-panel__content
+    .rd-navbar-top-panel__left
+    + .rd-navbar-top-panel__right {
     margin-top: 2rem;
 }
 
@@ -56,7 +63,7 @@
     max-width: 250px;
 }
 
-@media(max-width: 767px) {
+@media (max-width: 767px) {
     .image-steak {
         margin: 0 auto;
     }
